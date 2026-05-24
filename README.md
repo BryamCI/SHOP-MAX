@@ -7,17 +7,13 @@ Herramientas utilizadas en este proyecto son:
 - Java versión 21.
 
 Estructura del proyecto:
-a) css: carpeta de los estilos
-b) images: carpeta de imagenes
-c) js: carpeta de código JavaScript
-d) dashboard.jsp: sistema
-e) index.html: página principal
-f) En Source Packages tenemos:
-  - Controller
-  - Entity
-  - Model
-  - Utils
-g) database: shopmax
+-css: carpeta de los estilos
+- images: carpeta de imagenes
+- js: carpeta de código JavaScript
+- dashboard.jsp: sistema
+- index.html: página principal
+- En Source Packages tenemos: Controller, Entity, Model, Utils
+- database: shopmax
 
 Aún falta estructurar la arquitectura, ya que se trabajará con la arquitectura DAO.
 
