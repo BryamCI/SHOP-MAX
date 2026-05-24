@@ -7,7 +7,7 @@ Herramientas utilizadas en este proyecto son:
 - Java versión 21.
 
 Estructura del proyecto:
--css: carpeta de los estilos
+- css: carpeta de los estilos
 - images: carpeta de imagenes
 - js: carpeta de código JavaScript
 - dashboard.jsp: sistema
