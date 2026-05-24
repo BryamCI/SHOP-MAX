@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SHOP-MAX</title>
+  <link rel="stylesheet" href="css/website/main.css">
+  <link rel="stylesheet" href="css/website/products.css">
+  <link rel="stylesheet" href="css/website/about.css">
+  <link rel="stylesheet" href="css/website/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="images/logo/logo.png" alt="Logo SHOP-MAX">
+      <span>SHOP-MAX</span>
+    </div>
+
+    <!-- NAV / ACCIONES -->
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+
+      <button class="cart-btn">🛒</button>
+
+      <button class="login-btn" id="openLogin">
+        <span>Ingresar</span>
+      </button>
+    </nav>
+
+  </div>
+</header>
+    
+<main>
+
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <div class="hero-container">
+
+      <!-- IZQUIERDA -->
+      <div class="hero-text">
+        <h1>
+          <span class="gradient-text">Tecnología</span><br>
+          al Mejor Precio
+        </h1>
+
+        <p>
+          Descubre las últimas innovaciones en electrónica, gadgets y accesorios.
+          Calidad premium, precios increíbles y envío gratis.
+        </p>
+
+        <button class="btn-primary">
+          Explorar Productos
+        </button>
+
+        <!-- BENEFICIOS -->
+        <div class="benefits">
+          <div><span>🚚</span> Envío rápido</div>
+          <div><span>🔒</span> Compra segura</div>
+          <div><span>⭐</span> Mejor calidad</div>
+        </div>
+      </div>
+
+      <!-- DERECHA (CAROUSEL) -->
+      <div class="hero-carousel">
+        <div class="carousel">
+          <img src="images/electronica.jfif" class="active">
+          <img src="images/audio.jfif">
+          <img src="images/wearables.jfif">
+          <img src="images/fotografia.jfif">
+          <img src="images/accesorios.jfif">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <section id="productos" class="products">
+    <div class="products-container">
+
+      <!-- TÍTULO -->
+      <div class="products-header">
+        <h2 class="gradient-text">Nuestros Productos</h2>
+        <p>Descubre nuestra selección exclusiva de tecnología de última generación</p>
+      </div>
+
+      <!-- BUSCADOR + FILTRO -->
+      <div class="products-controls">
+        <div class="search-box">
+          <span>🔍</span>
+          <input type="text" id="searchInput" placeholder="Buscar productos...">
+        </div>
+
+        <select class="filter" id="filter">
+          <option>🔎 Todas</option>
+          <option>Electrónica</option>
+          <option>Audio</option>
+          <option>Wearables</option>
+          <option>Fotografía</option>
+          <option>Accesorios</option>
+        </select>
+      </div>
+
+      <!-- GRID PRODUCTOS -->
+      <div class="products-grid"></div>
+      
+      <div class="pagination">
+        <button id="prevBtn">⬅ Anterior</button>
+        <button id="nextBtn">Siguiente ➡</button>
+      </div>
+
+    </div>
+  </section>
+  
+  <section id="nosotros" class="about">
+    <div class="about-container">
+
+      <!-- TÍTULO -->
+      <div class="about-header">
+        <h2 class="gradient-text">Sobre Nosotros</h2>
+        <p>Líderes en retail con innovación tecnológica y excelencia</p>
+      </div>
+
+      <!-- MISIÓN Y VISIÓN -->
+      <div class="about-mv">
+
+        <div class="card mv-card">
+          <h3><span>🎯</span> Nuestra Misión</h3>
+          <p>
+            Brindar una experiencia de compra ágil, confiable y personalizada,
+            integrando tecnología digital en todos nuestros procesos para optimizar
+            la gestión de ventas, inventarios y atención al cliente, generando valor
+            sostenible para nuestros clientes y socios comerciales.
+          </p>
+        </div>
+
+        <div class="card mv-card">
+          <h3><span>🚀</span> Nuestra Visión</h3>
+          <p>
+            Consolidarnos como la cadena retail líder a nivel nacional, reconocida
+            por su eficiencia operativa, innovación tecnológica y excelencia en la
+            experiencia del cliente.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- VALORES -->
+      <div class="values-section">
+        <h3 class="section-title">Nuestros Valores</h3>
+
+        <div class="values-grid">
+
+          <div class="card value-card">
+            <div class="icon">⭐</div>
+            <h4>Excelencia</h4>
+            <p>Comprometidos con la calidad en cada producto y servicio que ofrecemos</p>
+          </div>
+
+          <div class="card value-card">
+            <div class="icon">🤝</div>
+            <h4>Cliente Primero</h4>
+            <p>Tu satisfacción es nuestra prioridad, siempre buscando superar tus expectativas</p>
+          </div>
+
+          <div class="card value-card">
+            <div class="icon">💡</div>
+            <h4>Innovación</h4>
+            <p>Implementamos las últimas tecnologías para mejorar tu experiencia de compra.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- POR QUÉ ELEGIR -->
+      <div class="why">
+
+        <h3>¿Por qué elegir SHOP-MAX?</h3>
+
+        <div class="why-grid">
+
+          <div class="why-item blue">
+            <h4>🔒 Compra Segura</h4>
+            <p>Protegemos tus datos con la más alta tecnología de seguridad</p>
+          </div>
+
+          <div class="why-item purple">
+            <h4>💰 Mejores Precios</h4>
+            <p>Ofertas competitivas y promociones exclusivas todo el año</p>
+          </div>
+
+          <div class="why-item green">
+            <h4>📞 Atención 24/7</h4>
+            <p>Soporte técnico y servicio al cliente disponible en todo momento</p>
+          </div>
+
+          <div class="why-item orange">
+            <h4>✅ Garantía de Calidad</h4>
+            <p>Todos nuestros productos cuentan con garantía y devoluciones fáciles</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  
+  <section id="contacto" class="contact">
+    <div class="contact-container">
+
+      <!-- HEADER -->
+      <div class="contact-header">
+        <h2 class="gradient-text">Contáctanos</h2>
+        <p>¿Tienes preguntas? Estamos aquí para ayudarte</p>
+      </div>
+
+      <div class="contact-content">
+
+        <!-- IZQUIERDA: INFO -->
+        <div class="contact-info">
+
+          <h3>Información de Contacto</h3>
+
+          <!-- ITEM -->
+          <div class="info-item">
+            <div class="icon-box">📍</div>
+            <div>
+              <strong>Dirección</strong>
+              <p>Av. Principal 123, Piura, Perú</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-box">📞</div>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+51 900000000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-box">💬</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>+51 900000000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-box">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p>contacto@shopmax.com</p>
+            </div>
+          </div>
+
+          <!-- HORARIO -->
+          <div class="schedule">
+            <h4>Horario de Atención</h4>
+            <p>Lunes - Viernes: 9:00 AM - 8:00 PM</p>
+            <p>Sábado: 10:00 AM - 6:00 PM</p>
+            <p>Domingo: 10:00 AM - 4:00 PM</p>
+          </div>
+
+        </div>
+
+        <!-- DERECHA: FORMULARIO -->
+        <div class="contact-form">
+
+          <h3>Envíanos un mensaje</h3>
+
+          <form>
+
+            <label>Nombre Completo</label>
+            <input type="text" placeholder="Tu nombre">
+
+            <label>Email</label>
+            <input type="email" placeholder="tu@email.com">
+
+            <label>Asunto</label>
+            <input type="text" placeholder="¿En qué podemos ayudarte?">
+
+            <label>Mensaje</label>
+            <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <button type="submit" class="btn-primary">
+              Enviar Mensaje
+            </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+
+  <!-- ===== FILA 1 ===== -->
+  <div class="footer-container">
+
+    <!-- COL 1 -->
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="logo.png" alt="SHOP-MAX">
+        <h2>SHOP-MAX</h2>
+      </div>
+
+      <p>
+        Tu destino para las mejores ofertas en tecnología.
+        Calidad, precio y servicio excepcional.
+      </p>
+
+      <!-- REDES -->
+      <div class="socials">
+
+        <a href="#" class="social facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="social instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="social x">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="#" class="social youtube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- COL 2 -->
+    <div class="footer-col">
+      <h3>Enlaces Rápidos</h3>
+      <a href="#"><strong>Inicio</strong></a>
+      <a href="#"><strong>Productos</strong></a>
+      <a href="#"><strong>Nosotros</strong></a>
+      <a href="#"><strong>Contacto</strong></a>
+    </div>
+
+    <!-- COL 3 -->
+    <div class="footer-col">
+      <h3>Información</h3>
+      <a href="#">Políticas de Privacidad</a>
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Política de Envíos</a>
+      <a href="#">Devoluciones y Garantías</a>
+      <a href="#">Preguntas Frecuentes</a>
+    </div>
+
+    <!-- COL 4 -->
+    <div class="footer-col">
+      <h3>Contacto</h3>
+
+      <p>📍 Av. Principal 123, Piura, Perú</p>
+      <p>📞 +51 900000000</p>
+      <p>💬 +51 900000000</p>
+      <p>✉️ contacto@shopmax.com</p>
+    </div>
+
+  </div>
+
+  <!-- LINEA -->
+  <div class="footer-divider"></div>
+
+  <!-- ===== FILA 2 ===== -->
+  <div class="footer-bottom">
+    © 2026 SHOP-MAX. Todos los derechos reservados.
+  </div>
+
+</footer>
+
+<div class="modal" id="loginModal">
+
+  <div class="modal-content">
+
+    <button class="close-modal" id="closeLogin">×</button>
+    <h2 class="modal-title">Iniciar Sesión</h2>
+
+    <!-- EMAIL -->
+    <label>Correo Electrónico</label>
+    <div class="input-box">
+      <i class="fa-regular fa-envelope"></i>
+      <input type="email" placeholder="micorreo@ejemplo.com">
+    </div>
+
+    <!-- PASSWORD -->
+    <label>Contraseña</label>
+    <div class="input-box">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="********">
+    </div>
+
+    <!-- BOTÓN -->
+    <button class="btn-login">
+      Iniciar Sesión
+    </button>
+
+    <p class="register-text">
+      ¿No tienes cuenta? <a href="#" id="openRegister">Regístrate</a>
+    </p>
+
+  </div>
+
+</div>
+
+<script src="js/carousel_categories.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/modal_login.js"></script>
+</body>
+</html>
